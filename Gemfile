@@ -48,3 +48,6 @@ group :development do
   # gem "spring"
 end
 
+# active model serializer
+gem 'active_model_serializers', '~> 0.10.2'
+
