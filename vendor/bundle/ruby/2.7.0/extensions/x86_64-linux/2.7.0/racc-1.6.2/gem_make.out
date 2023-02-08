@@ -1,0 +1,17 @@
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+/home/george/.rbenv/versions/2.7.4/bin/ruby -I /home/george/.rbenv/versions/2.7.4/lib/ruby/site_ruby/2.7.0 extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230208-49248-tdxsme sitelibdir\=./.gem.20230208-49248-tdxsme clean
+
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230208-49248-tdxsme sitelibdir\=./.gem.20230208-49248-tdxsme
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230208-49248-tdxsme sitelibdir\=./.gem.20230208-49248-tdxsme install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20230208-49248-tdxsme/racc

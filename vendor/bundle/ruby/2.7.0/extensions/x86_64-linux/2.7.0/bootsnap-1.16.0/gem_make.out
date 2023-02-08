@@ -1,0 +1,15 @@
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+/home/george/.rbenv/versions/2.7.4/bin/ruby -I /home/george/.rbenv/versions/2.7.4/lib/ruby/site_ruby/2.7.0 extconf.rb
+creating Makefile
+
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230208-49248-e8sbek sitelibdir\=./.gem.20230208-49248-e8sbek clean
+
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230208-49248-e8sbek sitelibdir\=./.gem.20230208-49248-e8sbek
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/george/Desktop/Development/Assgnments/Phase-4-project-and-challenges/Photo-Moto-Backend/photo-moto-backend/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230208-49248-e8sbek sitelibdir\=./.gem.20230208-49248-e8sbek install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20230208-49248-e8sbek/bootsnap
