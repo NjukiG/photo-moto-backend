@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import "bootswatch/dist/sketchy/bootstrap.min.css";
 import App from './components/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
