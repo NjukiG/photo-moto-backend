@@ -2,15 +2,48 @@
   text-align: center;
 }
 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header a,
+header button {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: #fff8e7;
+  border: 1px solid aqua;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: aqua;
+  cursor: pointer;
+}
+
 form {
   background-color: #fff8e7;
-  border: 1px solid salmon;
+  border: 1px solid aqua;
   display: flex;
   flex-direction: column;
   width: 600px;
   height: auto;
   margin: 0 auto;
   padding: 0 1rem 1rem;
+}
+
+main {
+  margin: 1rem;
+}
+
+form input {
+  margin: 0.25rem 0;
+}
+
+form button[type="submit"] {
+  width: 40%;
 }
 
 
