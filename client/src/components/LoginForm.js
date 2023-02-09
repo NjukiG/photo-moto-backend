@@ -19,6 +19,7 @@ function LoginForm({ setUser }) {
       }
     });
   };
+
   return (
     <div>
       <h1>Login Form</h1>
