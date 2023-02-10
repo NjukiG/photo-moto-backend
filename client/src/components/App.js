@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
+import AlbumsPage from "./AlbumsPage";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -24,6 +25,7 @@ function App() {
         {user ? (
           <Routes>
             <Route exact path="/" element={<Home user={user} />} />
+            <Route path="/albums" element={<AlbumsPage user={user} />} />
           </Routes>
         ) : (
           <Routes>

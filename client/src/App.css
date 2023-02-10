@@ -46,6 +46,41 @@ form button[type="submit"] {
   width: 40%;
 }
 
+.albums-form{
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 250, 181, 0.5);
+}
 
+/* .cards {
+  list-style: none;
+} */
+
+
+.cards {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* height: 500px; */
+
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
 
 

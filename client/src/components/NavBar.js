@@ -13,6 +13,7 @@ function NavBar({ user, setUser }) {
     <header>
       <div>
         <Link to="/">PhotoMoto</Link>
+        <Link to="/albums">Albums</Link>
       </div>
       <div>
         {user ? (

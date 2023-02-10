@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
+  # post "/albums", to: "albums#create"
 
   resources :albums, only: [:index, :create]
 end
