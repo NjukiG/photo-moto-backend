@@ -77,10 +77,15 @@ form button[type="submit"] {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
   }
+
 }
+
+
+
 
 

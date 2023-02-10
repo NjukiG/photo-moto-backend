@@ -14,6 +14,7 @@ function NavBar({ user, setUser }) {
       <div>
         <Link to="/">PhotoMoto</Link>
         <Link to="/albums">Albums</Link>
+        <Link to="/photos">Photos</Link>
       </div>
       <div>
         {user ? (
