@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Navbar, Nav, Container } from "react-bootstrap";
-import "bootstrap/js/src/collapse.js";
 
 function NavBar({ user, setUser }) {
   const handleLogout = () => {
@@ -13,7 +11,7 @@ function NavBar({ user, setUser }) {
   };
   return (
     <header>
-      <nav className="navbar navbar-light bg-dark navbar-expand-sm">
+      <nav className="navbar navbar-light bg-light navbar-expand-sm">
         <div className="container-fluid">
           <div>
             <Link to="/" className="navbar-brand">
@@ -27,7 +25,7 @@ function NavBar({ user, setUser }) {
             data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavbar"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon bg-light"></span>
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav ml-auto">

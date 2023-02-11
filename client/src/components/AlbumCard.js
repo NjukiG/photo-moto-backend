@@ -6,8 +6,7 @@ function AlbumCard({ album }) {
       <li className="card">
         <div>
           <h1>{album.title}</h1>
-          <button>Go to Photos</button>
-          
+          {/* <button className="btn btn-outline-primary">Go to Photos</button> */}
         </div>
 
         {/* <div class="card">

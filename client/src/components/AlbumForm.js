@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AlbumForm({onAddAlbum}) {
+function AlbumForm({ onAddAlbum }) {
   const [title, setTitle] = useState("");
 
   const handleAddAlbum = (e) => {
@@ -18,20 +18,24 @@ function AlbumForm({onAddAlbum}) {
   return (
     <div className="albums-form">
       <h1>Enter your new Album name!</h1>
-      <form onSubmit={handleAddAlbum}>
-        <label htmlFor="album">Album Name:</label>
-        <input
-          type="text"
-          name="title"
-          id="title"
-          placeholder="Album Title"
-          value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
-        />
-        <button type="submit">Add Album</button>
-      </form>
+      <div className="container">
+        <form onSubmit={handleAddAlbum}>
+          <label htmlFor="album">Album Name:</label>
+          <input
+            type="text"
+            className="form-control"
+            name="title"
+            id="title"
+            placeholder="Album Title"
+            value={title}
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
+          />
+          <br/>
+          <button type="submit" className="btn btn-outline-primary">Add Album</button>
+        </form>
+      </div>
     </div>
   );
 }

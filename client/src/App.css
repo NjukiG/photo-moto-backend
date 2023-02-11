@@ -29,12 +29,13 @@ header button {
 form {
   background-color: #fff8e7;
   border: 1px solid aqua;
-  display: flex;
-  flex-direction: column;
-  width: 600px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 600px;
   height: auto;
-  margin: 0 auto;
-  padding: 0 1rem 1rem;
+  margin: 0 auto; */
+  padding: 1.5rem 1rem 1rem;
+  border-radius: 10px;
 }
 
 main {
@@ -45,13 +46,13 @@ main {
   
 } */
 
-form input {
+/* form input {
   margin: 0.25rem 0;
 }
 
 form button[type="submit"] {
   width: 40%;
-}
+} */
 
 .albums-form{
   padding: 1rem 1rem;

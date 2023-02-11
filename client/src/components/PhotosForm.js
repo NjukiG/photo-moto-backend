@@ -44,6 +44,7 @@ const handleAddPhoto = (e) => {
         <label htmlFor="title">Title</label>
         <input
           type="text"
+          className="form-control"
           id="title"
           name="title"
           placeholder="Image Title"
@@ -53,6 +54,7 @@ const handleAddPhoto = (e) => {
         <label htmlFor="image_url">Image URL</label>
         <input
           type="text"
+          className="form-control"
           id="image_url"
           name="image_url"
           placeholder="Image URL"
@@ -62,13 +64,15 @@ const handleAddPhoto = (e) => {
         <label htmlFor="album_id">Album</label>
         <input
           type="text"
+          className="form-control"
           id="album_id"
           name="album_id"
           placeholder="Album"
           value={album_id}
           onChange={(e) => setAlbumID(e.target.value)}
         />
-        <button type="submit">Add Photo</button>
+        <br/>
+        <button type="submit" className="btn btn-outline-primary">Add Photo</button>
       </form>
     </div>
   );
