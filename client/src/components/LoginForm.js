@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SignupForm from "./SignupForm";
 
 function LoginForm({ setUser }) {
   const [username, setUsername] = useState("");
@@ -21,8 +22,9 @@ function LoginForm({ setUser }) {
   };
 
   return (
-    <div>
-      <h1>Login Form</h1>
+    <div className="login-form">
+      <h1>Welcome back.</h1>
+      <h3>We're glad to see you again!</h3>
       <form onSubmit={handleLogin}>
         <label htmlFor="username">Username</label>
         <input

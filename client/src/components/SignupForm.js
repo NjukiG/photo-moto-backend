@@ -29,7 +29,8 @@ function SignupForm({ setUser }) {
   };
   return (
     <div>
-      <h1>SignupForm</h1>
+      <h1>Create an Account</h1>
+      <h3>to get started now!</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input

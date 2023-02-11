@@ -5,26 +5,40 @@ function PhotosForm({onAddPhoto}) {
   const [image_url, setImageURL] = useState("");
   const [album_id, setAlbumID] = useState("");
 
-  const handleAddPhoto = (e) => {
-    e.preventDefault();
+//   const handleAddPhoto = (e) => {
+//     e.preventDefault();
 
+//     fetch("/photos", {
+//       method: "POST",
+//       headers: {
+//         "Conten-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         title: title,
+//         image_url: image_url,
+//         album_id: album_id,
+//       }),
+//     })
+//       .then((res) => res.json())
+//       .then((newPhoto) => onAddPhoto(newPhoto));
+//   };
+
+
+const handleAddPhoto = (e) => {
+    e.preventDefault();
     fetch("/photos", {
       method: "POST",
       headers: {
-        "Conten-Type": "application/json",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        tile: title,
-        image_url: image_url,
-        album_id: album_id,
-      }),
+      body: JSON.stringify({ title, image_url, album_id }),
     })
       .then((res) => res.json())
       .then((newPhoto) => onAddPhoto(newPhoto));
   };
 
   return (
-    <div>
+    <div className="photos-form">
       <h1>Enter Your new photo URL here!</h1>
       <form onSubmit={handleAddPhoto}>
         <label htmlFor="title">Title</label>
@@ -32,7 +46,7 @@ function PhotosForm({onAddPhoto}) {
           type="text"
           id="title"
           name="title"
-          placeholder="Image Ttile"
+          placeholder="Image Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />

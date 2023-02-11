@@ -6,7 +6,7 @@ function AlbumList({albums}) {
     <div>
         <ul className='cards'>
             {albums && albums.map((album) => {
-                return <AlbumCard key={album.id} album = {album} />
+                return <AlbumCard album = {album} />
             })}
         </ul>
     </div>

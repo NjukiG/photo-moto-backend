@@ -9,6 +9,11 @@ function AlbumCard({ album }) {
           <button>Go to Photos</button>
           
         </div>
+
+        {/* <div class="card">
+          <div class="card-body">{album.title}</div>
+          <button>Go to Photos</button>
+        </div> */}
       </li>
       <br />
     </div>

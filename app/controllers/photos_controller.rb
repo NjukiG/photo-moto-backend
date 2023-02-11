@@ -5,9 +5,21 @@ class PhotosController < ApplicationController
         render json: photos, status: :ok
     end
 
-    def show
-        photo = @current_user.photos.create!(photo_params)
+   
+    # def create
+    #     photo = @current_user.photos.create!(photo_params)
+    #     render json: photo, status: :created
+    # end
+
+
+    def create
+        photo = Photo.create!(photo_params)
         render json: photo, status: :created
+    end
+
+    def show
+        photo = Photo.find_by(id: params[:id])
+        render json: photo, status: :ok
     end
 
     def update

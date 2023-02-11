@@ -16,9 +16,9 @@ function AlbumsPage({ user }) {
     setAlbums(updatedAlbumsArray)
   };
 
-  const displayedAlbums = albums.map((album) => {
-      return album.title
-  })
+  // const displayedAlbums = albums.map((album) => {
+  //     return album.title
+  // })
 
   return (
     <div>
