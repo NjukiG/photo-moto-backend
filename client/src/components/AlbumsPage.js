@@ -13,17 +13,13 @@ function AlbumsPage({ user }) {
 
   const handleAddAlbum = (newAlbum) => {
     const updatedAlbumsArray = [newAlbum, ...albums];
-    setAlbums(updatedAlbumsArray)
+    setAlbums(updatedAlbumsArray);
   };
-
-  // const displayedAlbums = albums.map((album) => {
-  //     return album.title
-  // })
 
   return (
     <div>
       <AlbumForm user={user} onAddAlbum={handleAddAlbum} />
-      <AlbumList user={user} albums = {albums} />
+      <AlbumList user={user} albums={albums} />
     </div>
   );
 }

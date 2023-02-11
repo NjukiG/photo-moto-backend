@@ -29,7 +29,7 @@ function PhotoCard({ photo, onDeletePhoto }) {
           <button
             onClick={deletePhoto}
             className="btn btn-outline-danger"
-            style={{marginLeft:10}}
+            style={{ marginLeft: 10 }}
           >
             Delete Spice
           </button>

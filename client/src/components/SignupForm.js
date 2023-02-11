@@ -78,7 +78,7 @@ function SignupForm({ setUser }) {
             onChange={(e) => setPasswordConfirmation(e.target.value)}
             autoComplete="current-password"
           />
-          <br/>
+          <br />
           <button type="submit" className="btn btn-outline-primary">
             Create Account
           </button>

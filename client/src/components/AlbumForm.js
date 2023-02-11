@@ -32,8 +32,10 @@ function AlbumForm({ onAddAlbum }) {
               setTitle(e.target.value);
             }}
           />
-          <br/>
-          <button type="submit" className="btn btn-outline-primary">Add Album</button>
+          <br />
+          <button type="submit" className="btn btn-outline-primary">
+            Add Album
+          </button>
         </form>
       </div>
     </div>

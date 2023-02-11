@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-
-/* header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-} */
-
-
-
 header a,
 header button {
   font-size: 1rem;
@@ -25,15 +15,9 @@ header button {
   cursor: pointer;
 }
 
-
 form {
   background-color: #fff8e7;
   border: 1px solid aqua;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* width: 600px;
-  height: auto;
-  margin: 0 auto; */
   padding: 1.5rem 1rem 1rem;
   border-radius: 10px;
 }
@@ -42,68 +26,24 @@ main {
   margin: 1rem;
 }
 
-/* .login-form{
-  
-} */
-
-/* form input {
-  margin: 0.25rem 0;
-}
-
-form button[type="submit"] {
-  width: 40%;
-} */
-
-.albums-form{
+.albums-form {
   padding: 1rem 1rem;
   margin: 2rem 0;
   background-color: rgba(181, 250, 181, 0.5);
 }
 
-.photos-form{
+.photos-form {
   padding: 1rem 1rem;
   margin: 2rem 0;
   background-color: rgba(181, 250, 181, 0.5);
 }
-
-/* .cards {
-  list-style: none;
-} */
-
 
 .cards {
   list-style: none;
   display: flex;
   justify-content: center;
-  /* height: 500px; */
-
 }
 
-.photo{
+.photo {
   width: 400px;
 }
-
-/* .card {
-  margin: 1rem;
-}
-
-.card img {
-  width: 100%;
-} */
-
-/* .card button {
-  margin-top: 0.5rem;
-} */
-
-/* @media (min-width: 768px) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-} */
-
-
-
-
-

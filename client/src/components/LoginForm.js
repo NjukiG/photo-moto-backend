@@ -26,7 +26,7 @@ function LoginForm({ setUser }) {
       <div className="login-form">
         <h1>Welcome back.</h1>
         <h3>Glad to see you again!</h3>
-        <br/>
+        <br />
         <form onSubmit={handleLogin}>
           <div className="form-group row">
             <label htmlFor="username" className="col-sm-3 col-form-label">
@@ -43,7 +43,7 @@ function LoginForm({ setUser }) {
               />
             </div>
           </div>
-          <br/>
+          <br />
           <div className="form-group row">
             <label htmlFor="password" className="col-sm-3 col-form-label ">
               Password
@@ -59,7 +59,7 @@ function LoginForm({ setUser }) {
               />
             </div>
           </div>
-          <br/>
+          <br />
           <div className="row">
             <div className="col-sm-9 offset-sm-3">
               <button className="btn btn-outline-primary" type="submit">

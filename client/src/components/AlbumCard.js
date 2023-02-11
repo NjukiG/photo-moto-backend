@@ -21,5 +21,3 @@ function AlbumCard({ album }) {
 }
 
 export default AlbumCard;
-
-

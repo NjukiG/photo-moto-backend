@@ -1,30 +1,29 @@
 import React, { useState } from "react";
 
-function PhotosForm({onAddPhoto}) {
+function PhotosForm({ onAddPhoto }) {
   const [title, setTitle] = useState("");
   const [image_url, setImageURL] = useState("");
   const [album_id, setAlbumID] = useState("");
 
-//   const handleAddPhoto = (e) => {
-//     e.preventDefault();
+  //   const handleAddPhoto = (e) => {
+  //     e.preventDefault();
 
-//     fetch("/photos", {
-//       method: "POST",
-//       headers: {
-//         "Conten-Type": "application/json",
-//       },
-//       body: JSON.stringify({
-//         title: title,
-//         image_url: image_url,
-//         album_id: album_id,
-//       }),
-//     })
-//       .then((res) => res.json())
-//       .then((newPhoto) => onAddPhoto(newPhoto));
-//   };
+  //     fetch("/photos", {
+  //       method: "POST",
+  //       headers: {
+  //         "Conten-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         title: title,
+  //         image_url: image_url,
+  //         album_id: album_id,
+  //       }),
+  //     })
+  //       .then((res) => res.json())
+  //       .then((newPhoto) => onAddPhoto(newPhoto));
+  //   };
 
-
-const handleAddPhoto = (e) => {
+  const handleAddPhoto = (e) => {
     e.preventDefault();
     fetch("/photos", {
       method: "POST",
@@ -71,8 +70,10 @@ const handleAddPhoto = (e) => {
           value={album_id}
           onChange={(e) => setAlbumID(e.target.value)}
         />
-        <br/>
-        <button type="submit" className="btn btn-outline-primary">Add Photo</button>
+        <br />
+        <button type="submit" className="btn btn-outline-primary">
+          Add Photo
+        </button>
       </form>
     </div>
   );
