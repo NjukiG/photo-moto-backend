@@ -1,38 +1,46 @@
 import React from "react";
 
-function PhotoCard({ photo }) {
-  // const {id, title, image_url} = photo
+function PhotoCard({ photo, onDeletePhoto }) {
+  const { id, title, image_url } = photo;
   // console.log(typeof(photo))
 
+  function deletePhoto() {
+    fetch(`/photos/${id}`, {
+      method: "DELETE",
+    }).then((r) => {
+      if (r.ok) {
+        onDeletePhoto(photo);
+      }
+    });
+  }
+
   return (
-    <div>
-      <li>
-        <img src={photo?.image_url} alt="" />
-        <h3>{photo?.title}</h3>
-        <h4>{photo?.album_id}</h4>
-      </li>
-      {/* <div style="width:400px">
-        <img
-          className="card-img-top"
-          src={photo?.image_url}
-          alt="Card image"
-        />
+    // <div className="container">
+    // <div className="row row-cols-1 row-cols-md-3 g-4">
+    <div className="col">
+      <div className="card h-100">
+        <img class="card-img-top" alt="" src={photo?.image_url} />
         <div className="card-body">
-          <h4 className="card-title">{photo?.title}</h4>
-          <p class="card-text">
-            Some example text some example text. John Doe is an architect and
-            engineer
-          </p>
-          <a href="#" className="btn btn-primary">
-            See Profile
+          <h5 className="card-title">{photo?.title}</h5>
+          <a href="/photos/:id" className="btn btn-outline-primary">
+            See Photo
           </a>
+
+          <button
+            onClick={deletePhoto}
+            className="btn btn-outline-danger"
+            style={{marginLeft:10}}
+          >
+            Delete Spice
+          </button>
         </div>
-      </div> */}
+      </div>
     </div>
+    // </div>
+    //  </div>
   );
 }
 
 export default PhotoCard;
-
 
 //  key={photo?.id}

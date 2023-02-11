@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "bootstrap/js/src/collapse.js";
 
 function NavBar({ user, setUser }) {
   const handleLogout = () => {
@@ -66,24 +67,3 @@ function NavBar({ user, setUser }) {
 }
 
 export default NavBar;
-
-//   <header>
-//   <div>
-//     <Link to="/">PhotoMoto</Link>
-//   </div>
-//   <div>
-//     {user ? (
-//       <>
-//         <Link to="/albums">Albums</Link>
-//         <Link to="/photos">Photos</Link>
-//         <button onClick={handleLogout}>Logout</button>
-//       </>
-//     ) : (
-//       <>
-//         <Link to="/signup">Sign Up</Link>
-//         <Link to="/login">Login</Link>
-//       </>
-//     )}
-//   </div>
-
-// </header>

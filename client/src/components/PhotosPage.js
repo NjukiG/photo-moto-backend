@@ -15,10 +15,16 @@ function PhotosPage({user}) {
       const updatedPhotosArray = [newPhoto, ...photos]
       setPhotos(updatedPhotosArray)
   };
+
+  const handleDeletePhoto = (photoToDelete) => {
+    setPhotos((photos) => {
+      return photos.filter((photo) => photo.id !== photoToDelete)
+    })
+  }
   return (
     <div>
       <PhotosForm user={user} onAddPhoto={handleAddPhoto} />
-      <PhotosList user={user} photos={photos} />
+      <PhotosList user={user} photos={photos} onDeletePhoto={handleDeletePhoto} />
     </div>
   );
 }

@@ -79,25 +79,29 @@ form button[type="submit"] {
 
 }
 
-.card {
+.photo{
+  width: 400px;
+}
+
+/* .card {
   margin: 1rem;
 }
 
 .card img {
   width: 100%;
-}
+} */
 
-.card button {
+/* .card button {
   margin-top: 0.5rem;
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .cards {
     display: flex;
     flex-wrap: wrap;
   }
 
-}
+} */
 
 
 
