@@ -3,12 +3,14 @@
 }
 
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-}
+} */
+
+
 
 header a,
 header button {
@@ -22,6 +24,7 @@ header button {
   color: aqua;
   cursor: pointer;
 }
+
 
 form {
   background-color: #fff8e7;
@@ -38,9 +41,9 @@ main {
   margin: 1rem;
 }
 
-.login-form{
+/* .login-form{
   
-}
+} */
 
 form input {
   margin: 0.25rem 0;

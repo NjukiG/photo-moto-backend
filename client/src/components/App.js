@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../App.css";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./NavBar";
+import NavBar from "./Navbar";
 import Home from "./Home";
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import SignupForm from "./SignupForm";
+// import { Button } from "bootstrap";
+
+
 
 function LoginForm({ setUser }) {
   const [username, setUsername] = useState("");
@@ -43,9 +45,12 @@ function LoginForm({ setUser }) {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">LOGIN</button>
+        
       </form>
+      {/* <Button>Login</Button> */}
     </div>
   );
 }
 
 export default LoginForm;
+
