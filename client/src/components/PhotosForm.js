@@ -5,24 +5,6 @@ function PhotosForm({ onAddPhoto }) {
   const [image_url, setImageURL] = useState("");
   const [album_id, setAlbumID] = useState("");
 
-  //   const handleAddPhoto = (e) => {
-  //     e.preventDefault();
-
-  //     fetch("/photos", {
-  //       method: "POST",
-  //       headers: {
-  //         "Conten-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         title: title,
-  //         image_url: image_url,
-  //         album_id: album_id,
-  //       }),
-  //     })
-  //       .then((res) => res.json())
-  //       .then((newPhoto) => onAddPhoto(newPhoto));
-  //   };
-
   const handleAddPhoto = (e) => {
     e.preventDefault();
     fetch("/photos", {

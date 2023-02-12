@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import PhotosForm from "./PhotosForm";
 import PhotosList from "./PhotosList";
 import PhotoSearch from "./PhotoSearch";
+import UpdatePhoto from "./UpdatePhoto";
+import {Routes, Route} from "react-router-dom"
 
 function PhotosPage({ user }) {
   const [photos, setPhotos] = useState([]);
@@ -61,6 +63,9 @@ function PhotosPage({ user }) {
         onDeletePhoto={handleDeletePhoto}
         onUpdatePhoto = {handleUpdatePhoto}
       />
+      <Routes>
+        <Route path="/update" element={<UpdatePhoto />} />
+      </Routes>
     </div>
   );
 }

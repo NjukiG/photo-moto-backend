@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function PhotoCard({ photo, onDeletePhoto, onUpdatePhoto }) {
   const { id, title, image_url } = photo;
@@ -14,24 +15,40 @@ function PhotoCard({ photo, onDeletePhoto, onUpdatePhoto }) {
     });
   }
 
+  const updatePhoto = () => {
+    console.log("I was clicked", id);
+
+    const updateObj = {
+      title: photo.title,
+      image_url: photo.image_url,
+    };
+
+    fetch(`photos/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateObj),
+    })
+      .then((res) => res.json())
+      .then((updatedPhoto) => onUpdatePhoto(updatedPhoto));
+  };
+
   return (
-    // <div className="container">
-    // <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100">
         <img class="card-img-top" alt="" src={photo?.image_url} />
         <div className="card-body">
           <h5 className="card-title">{photo?.title}</h5>
-          {/* <a href="/photos/:id" className="btn btn-primary">
-            See Photo
-          </a> */}
-
-          <button
-            className="btn btn-outline-success"
-            style={{ marginLeft: 10 }}
-          >
-            Update
-          </button>
+          <Link to="/update">
+            <button
+              onClick={updatePhoto}
+              className="btn btn-outline-success"
+              style={{ marginLeft: 10 }}
+            >
+              Update
+            </button>
+          </Link>
 
           <button
             onClick={deletePhoto}
@@ -43,8 +60,6 @@ function PhotoCard({ photo, onDeletePhoto, onUpdatePhoto }) {
         </div>
       </div>
     </div>
-    // </div>
-    //  </div>
   );
 }
 
