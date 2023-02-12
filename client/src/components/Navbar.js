@@ -12,10 +12,11 @@ function NavBar({ user, setUser }) {
   };
   return (
     <header>
-      <nav className="navbar navbar-light bg-light navbar-expand-sm">
+      <nav className="navbar navbar-light bg-light navbar-expand-lg">
         <div className="container-fluid">
           <div>
             <Link to="/" className="navbar-brand">
+            <img src="https://i.pinimg.com/originals/8a/76/96/8a7696cb9ac02d0ea26945a8e563b04b.jpg" width="40" height="40" class="d-inline-block align-top" alt=""/>
               PhotoMoto
             </Link>
           </div>
@@ -28,7 +29,7 @@ function NavBar({ user, setUser }) {
           >
             <span className="navbar-toggler-icon bg-light"></span>
           </button>
-          <div className="collapse navbar-collapse" id="collapsibleNavbar">
+          <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul className="navbar-nav ml-auto">
               {user ? (
                 <>

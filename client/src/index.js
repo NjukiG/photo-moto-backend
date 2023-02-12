@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "bootswatch/dist/sketchy/bootstrap.min.css";
+import "bootswatch/dist/quartz/bootstrap.min.css";
 import App from "./components/App";
 import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
