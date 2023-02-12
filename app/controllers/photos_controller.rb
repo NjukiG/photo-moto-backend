@@ -24,6 +24,7 @@ class PhotosController < ApplicationController
 
     def update
         photo = Photo.find_by(id: params[:id])
+        photo.update(photo_params)
         render json: photo, status: :accepted
     end
 

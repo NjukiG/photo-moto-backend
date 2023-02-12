@@ -11,7 +11,7 @@ function AlbumCard({ album }) {
         />
         <div className="card-body">
           <h5 className="card-title">{album.title}</h5>
-          <a href="/photos" className="btn btn-outline-primary">
+          <a href="/photos" className="btn btn-primary">
             See Photos
           </a>
         </div>

@@ -22,16 +22,23 @@ function PhotoCard({ photo, onDeletePhoto }) {
         <img class="card-img-top" alt="" src={photo?.image_url} />
         <div className="card-body">
           <h5 className="card-title">{photo?.title}</h5>
-          <a href="/photos/:id" className="btn btn-outline-primary">
+          {/* <a href="/photos/:id" className="btn btn-primary">
             See Photo
-          </a>
+          </a> */}
+
+          <button
+            className="btn btn-outline-success"
+            style={{ marginLeft: 10 }}
+          >
+            Update
+          </button>
 
           <button
             onClick={deletePhoto}
             className="btn btn-outline-danger"
             style={{ marginLeft: 10 }}
           >
-            Delete Spice
+            Delete
           </button>
         </div>
       </div>
