@@ -6,7 +6,7 @@ import PhotoSearch from "./PhotoSearch";
 function PhotosPage({ user }) {
   const [photos, setPhotos] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [showPhotoForm, setShowPhotoForm] = useState(false)
+  const [showPhotoForm, setShowPhotoForm] = useState(false);
 
   useEffect(() => {
     fetch("/photos")
@@ -29,15 +29,25 @@ function PhotosPage({ user }) {
     return photo.title.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  const handleShowForm = ()=> {
-    setShowPhotoForm((showPhotoForm) => !showPhotoForm)
-  }
+  const handleShowForm = () => {
+    setShowPhotoForm((showPhotoForm) => !showPhotoForm);
+  };
+
+  const handleUpdatePhoto = (updatedPhoto) => {
+    const updatedPhotos = photos.map((photo) =>
+      photo.id === updatedPhoto.id ? updatedPhoto : photo
+    );
+  };
   return (
     <div>
-      {showPhotoForm ? <PhotosForm user={user} onAddPhoto={handleAddPhoto} /> : null}
-      <button className="btn btn-info" onClick={handleShowForm}>Add Photo</button>
-      <br/>
-      <br/>
+      {showPhotoForm ? (
+        <PhotosForm user={user} onAddPhoto={handleAddPhoto} />
+      ) : null}
+      <button className="btn btn-info" onClick={handleShowForm}>
+        Add Photo
+      </button>
+      <br />
+      <br />
       <PhotoSearch
         displayedPhotos={displayedPhotos}
         searchTerm={searchTerm}
@@ -49,6 +59,7 @@ function PhotosPage({ user }) {
         // photos={photos}
         photos={displayedPhotos}
         onDeletePhoto={handleDeletePhoto}
+        onUpdatePhoto = {handleUpdatePhoto}
       />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-function PhotoCard({ photo, onDeletePhoto }) {
+function PhotoCard({ photo, onDeletePhoto, onUpdatePhoto }) {
   const { id, title, image_url } = photo;
   // console.log(typeof(photo))
 

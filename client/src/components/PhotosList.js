@@ -1,7 +1,7 @@
 import React from "react";
 import PhotoCard from "./PhotoCard";
 
-function PhotosList({ photos, onDeletePhoto }) {
+function PhotosList({ photos, onDeletePhoto, onUpdatePhoto }) {
   return (
     
     <div className="container">
@@ -16,6 +16,7 @@ function PhotosList({ photos, onDeletePhoto }) {
                   key={photo.id}
                   photo={photo}
                   onDeletePhoto={onDeletePhoto}
+                  onUpdatePhoto={onUpdatePhoto}
                 />
                 <br />
               </>
