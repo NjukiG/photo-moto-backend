@@ -4,7 +4,7 @@ import AlbumList from "./AlbumList";
 
 function AlbumsPage({ user }) {
   const [albums, setAlbums] = useState([]);
-  const [showAlbumsForm, setShowAlbumsForm] = useState(false)
+  const [showAlbumsForm, setShowAlbumsForm] = useState(false);
 
   useEffect(() => {
     fetch("/albums")
@@ -17,14 +17,19 @@ function AlbumsPage({ user }) {
     setAlbums(updatedAlbumsArray);
   };
 
-  const handleShowAlbumForm = ()=> {
-    setShowAlbumsForm(showAlbumsForm => !showAlbumsForm)
-  }
+  const handleShowAlbumForm = () => {
+    setShowAlbumsForm((showAlbumsForm) => !showAlbumsForm);
+  };
   return (
     <div>
-      {showAlbumsForm ? <AlbumForm user={user} onAddAlbum={handleAddAlbum} /> : null}
-      <button className="btn btn-info" onClick={handleShowAlbumForm}>Add Album</button>
-      <br/><br/>
+      {showAlbumsForm ? (
+        <AlbumForm user={user} onAddAlbum={handleAddAlbum} />
+      ) : null}
+      <button className="btn btn-outline-info" onClick={handleShowAlbumForm}>
+        {showAlbumsForm ? "Collapse Album Form" : "Show Album Form"}
+      </button>
+      <br />
+      <br />
       <AlbumList user={user} albums={albums} />
     </div>
   );

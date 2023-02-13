@@ -43,10 +43,10 @@ function PhotosPage({ user }) {
   return (
     <div>
       {showPhotoForm ? (
-        <PhotosForm user={user} onAddPhoto={handleAddPhoto} />
+        <PhotosForm user={user} onAddPhoto={handleAddPhoto} showPhotoForm={showPhotoForm} />
       ) : null}
-      <button className="btn btn-info" onClick={handleShowForm}>
-        Add Photo
+      <button className="btn btn-outline-info" onClick={handleShowForm}>
+        {showPhotoForm ?"Collapse Photo Form" : "Show Photo Form"}
       </button>
       <br />
       <br />
@@ -63,9 +63,7 @@ function PhotosPage({ user }) {
         onDeletePhoto={handleDeletePhoto}
         onUpdatePhoto = {handleUpdatePhoto}
       />
-      <Routes>
-        <Route path="/update" element={<UpdatePhoto />} />
-      </Routes>
+      <UpdatePhoto />
     </div>
   );
 }

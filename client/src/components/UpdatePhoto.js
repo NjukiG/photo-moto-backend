@@ -52,8 +52,8 @@ function UpdatePhoto({onUpdatePhoto}) {
           onChange={(e) => setAlbumID(e.target.value)}
         />
         <br />
-        <button type="submit" className="btn btn-outline-primary">
-          Add Photo
+        <button type="submit" className="btn btn-outline-success">
+          Update Photo
         </button>
       </form>
     </div>

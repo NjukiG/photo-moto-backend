@@ -3,7 +3,7 @@ import React from "react";
 function PhotoSearch({ searchTerm, onSearchChange }) {
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search for a photo:</label>
+      <label htmlFor="search">Search for a photo:</label><br />
       <input
         type="text"
         id="search"
