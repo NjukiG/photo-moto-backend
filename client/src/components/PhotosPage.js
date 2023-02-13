@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import PhotosForm from "./PhotosForm";
 import PhotosList from "./PhotosList";
 import PhotoSearch from "./PhotoSearch";
-import UpdatePhoto from "./UpdatePhoto";
-import {Routes, Route} from "react-router-dom"
+// import UpdatePhoto from "./UpdatePhoto";
+// import {Routes, Route} from "react-router-dom"
 
 function PhotosPage({ user }) {
   const [photos, setPhotos] = useState([]);
@@ -35,11 +35,13 @@ function PhotosPage({ user }) {
     setShowPhotoForm((showPhotoForm) => !showPhotoForm);
   };
 
-  const handleUpdatePhoto = (updatedPhoto) => {
-    const updatedPhotos = photos.map((photo) =>
-      photo.id === updatedPhoto.id ? updatedPhoto : photo
-    );
-  };
+  // const handleUpdatePhoto = (updatedPhoto) => {
+  //   const updatedPhotos = photos.map((photo) =>
+  //     photo.id === updatedPhoto.id ? updatedPhoto : photo
+  //   );
+  // };
+
+
   return (
     <div>
       {showPhotoForm ? (
@@ -61,9 +63,9 @@ function PhotosPage({ user }) {
         // photos={photos}
         photos={displayedPhotos}
         onDeletePhoto={handleDeletePhoto}
-        onUpdatePhoto = {handleUpdatePhoto}
+        // onUpdatePhoto = {handleUpdatePhoto}
       />
-      <UpdatePhoto />
+      {/* <UpdatePhoto /> */}
     </div>
   );
 }

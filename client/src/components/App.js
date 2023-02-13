@@ -7,7 +7,7 @@ import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import AlbumsPage from "./AlbumsPage";
 import PhotosPage from "./PhotosPage";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 function App() {
   const [user, setUser] = useState(null);
