@@ -43,4 +43,10 @@ The project has the ability for a user to create an account and login to the app
 
 ## Live Link:
 
+The live site is: https://photo-moto.netlify.app/
+
+## Server:
+
+THe database is hosted on Render as: https://photo-app-kh0g.onrender.com
+
 
