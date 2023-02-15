@@ -50,3 +50,12 @@ The live site is: https://photo-moto.netlify.app/
 THe database is hosted on Render as: https://photo-app-kh0g.onrender.com
 
 
+##Running Locally
+
+To run the server locally, clone the repository and then run bundle install to get all the dependencies.
+Then run rails server or rails s to fire up the server.
+
+- bundle install
+- rails sever
+
+
